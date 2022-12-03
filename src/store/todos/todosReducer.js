@@ -1,15 +1,10 @@
-import { createStore } from "redux";
-import { devToolsEnhancer } from 'redux-devtools-extension';
-
-let idTodo = 0;
-
-const todos = (state = [], action) => {
+export const todos = (state = [], action) => {
   switch (action.type) {
     case "ADD_TODO": {
       return [
         ...state,
         {
-          id: ++idTodo,
+          id: Date.now(),
           title: action.title,
           completed: false,
         },
@@ -36,27 +31,3 @@ const todos = (state = [], action) => {
     }
   }
 };
-
-export const store = createStore(todos, devToolsEnhancer());
-
-export const addTodo = (title) => {
-  return {
-    type: "ADD_TODO",
-    title,
-  };
-};
-
-export const toggleTodo = (id) => {
-  return {
-    type: "TOGGLE_TODO",
-    id,
-  };
-};
-
-export const removeTodo = (id) => {
-  return {
-    type: "REMOVE_TODO",
-    id,
-  };
-};
-

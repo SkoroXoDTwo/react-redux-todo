@@ -1,9 +1,12 @@
 import { useSelector, useDispatch } from "react-redux";
-import { addTodo, toggleTodo, removeTodo } from "./store";
+
+import { addTodo, removeTodo, toggleTodo } from "./store/todos/todosActions";
+import { allTodos, activeTodos } from "./store/todos/todosSelectors";
+
 import React from "react";
 
 function App() {
-  const todos = useSelector((state) => state);
+  const todos = useSelector(allTodos);
   const dispatch = useDispatch();
 
   const handleAddTodo = (e) => {
@@ -22,7 +25,12 @@ function App() {
 
       <ul>
         {todos.map((todo) => (
-          <Todo key={todo.id} title={todo.title} completed={todo.completed} id={todo.id}/>
+          <Todo
+            key={todo.id}
+            title={todo.title}
+            completed={todo.completed}
+            id={todo.id}
+          />
         ))}
       </ul>
     </div>
@@ -34,7 +42,11 @@ function Todo({ title, completed, id }) {
 
   return (
     <li>
-      <input type="checkbox" checked={completed} onChange={() => dispatch(toggleTodo(id))}/>
+      <input
+        type="checkbox"
+        checked={completed}
+        onChange={() => dispatch(toggleTodo(id))}
+      />
       {title}
       <button onClick={() => dispatch(removeTodo(id))}>Удалить</button>
     </li>
