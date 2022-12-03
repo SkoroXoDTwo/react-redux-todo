@@ -1,5 +1,5 @@
 import { useSelector, useDispatch } from "react-redux";
-import { addTodo, toggleTodo } from "./store";
+import { addTodo, toggleTodo, removeTodo } from "./store";
 import React from "react";
 
 function App() {
@@ -9,9 +9,8 @@ function App() {
   const handleAddTodo = (e) => {
     e.preventDefault();
     dispatch(addTodo(e.target.title.value));
+    e.target.reset();
   };
-
-  console.log(todos);
 
   return (
     <div className="App">
@@ -37,6 +36,7 @@ function Todo({ title, completed, id }) {
     <li>
       <input type="checkbox" checked={completed} onChange={() => dispatch(toggleTodo(id))}/>
       {title}
+      <button onClick={() => dispatch(removeTodo(id))}>Удалить</button>
     </li>
   );
 }

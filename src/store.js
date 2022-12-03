@@ -1,4 +1,5 @@
 import { createStore } from "redux";
+import { devToolsEnhancer } from 'redux-devtools-extension';
 
 let idTodo = 0;
 
@@ -26,13 +27,17 @@ const todos = (state = [], action) => {
       );
     }
 
+    case "REMOVE_TODO": {
+      return state.filter((todo) => todo.id !== action.id);
+    }
+
     default: {
       return state;
     }
   }
 };
 
-export const store = createStore(todos);
+export const store = createStore(todos, devToolsEnhancer());
 
 export const addTodo = (title) => {
   return {
@@ -47,3 +52,11 @@ export const toggleTodo = (id) => {
     id,
   };
 };
+
+export const removeTodo = (id) => {
+  return {
+    type: "REMOVE_TODO",
+    id,
+  };
+};
+
