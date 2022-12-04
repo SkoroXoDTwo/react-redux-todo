@@ -1,6 +1,8 @@
+import {ADD_TODO, TOGGLE_TODO, REMOVE_TODO} from './todosConst'
+
 export const todos = (state = [], action) => {
   switch (action.type) {
-    case "ADD_TODO": {
+    case ADD_TODO: {
       return [
         ...state,
         {
@@ -11,7 +13,7 @@ export const todos = (state = [], action) => {
       ];
     }
 
-    case "TOGGLE_TODO": {
+    case TOGGLE_TODO: {
       return state.map((todo) =>
         todo.id === action.id
           ? {
@@ -22,7 +24,7 @@ export const todos = (state = [], action) => {
       );
     }
 
-    case "REMOVE_TODO": {
+    case REMOVE_TODO: {
       return state.filter((todo) => todo.id !== action.id);
     }
 
