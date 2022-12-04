@@ -1,8 +1,7 @@
-import { TOGGLE_THEME } from "./themeConst";
+import { TOGGLE_THEME } from "./themesConst";
 
-export const setTheme = (theme) => {
+export const setTheme = () => {
   return {
     type: TOGGLE_THEME,
-    theme,
   };
 };

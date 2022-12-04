@@ -10,16 +10,18 @@
     text-transform: uppercase;
     color: var(--text-header-color);
     letter-spacing: 12px;
+    font-size: 36px;
+    font-weight: 700;
   }
 
   &__theme-toggle {
     border: none;
     width: 25px;
     height: 25px;
-    background: url(../../images/icon-moon.svg);
+    background: var(--toggle-img-url);
     background-size: contain;
     background-position: center;
-    transition: opacity 0.2s;
+    transition: opacity 0.2s, background 0.2s;
 
     &:hover {
       cursor: pointer;

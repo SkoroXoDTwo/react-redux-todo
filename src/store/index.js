@@ -13,7 +13,7 @@ export const cofigureStore = () => {
     throttle(() => {
       saveState({
         todos: store.getState().todos,
-        themes: store.getState().themes,
+        theme: store.getState().theme,
       });
     }),
     1000

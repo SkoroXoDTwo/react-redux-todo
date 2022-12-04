@@ -5,8 +5,14 @@ import TodoList from "./components/TodoList/TodoList";
 import Filters from "./components/Filters/Filters";
 import './App.scss'
 import React from "react";
+import { setHTMLTheme } from './utils/setHTMLTheme'
+import { selectTheme } from './store/themes/themesSelectors'
+import { useSelector } from 'react-redux'
 
 function App() {
+  const activeTheme = useSelector(selectTheme);
+  setHTMLTheme(activeTheme);
+
   return (
     <div className="app">
       <BackgroundImage />
