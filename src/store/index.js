@@ -9,9 +9,15 @@ export const cofigureStore = () => {
 
   const store = createStore(rootReducer, presistedState, devToolsEnhancer());
 
-  store.subscribe(throttle(() => {
-    saveState({ todos: store.getState().todos });
-  }), 1000);
+  store.subscribe(
+    throttle(() => {
+      saveState({
+        todos: store.getState().todos,
+        themes: store.getState().themes,
+      });
+    }),
+    1000
+  );
 
   return store;
 };
