@@ -1,0 +1,37 @@
+.form-add {
+  background: var(--background-container-color);
+  padding: 15px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  transition: background 0.2s;
+  box-sizing: border-box;
+
+  &__btn {
+    border: none;
+    padding: none;
+    margin-right: 15px;
+    background: url(../../images/icon-add.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+    transition: opacity .2s;
+
+    &:hover {
+      opacity: 0.6;
+      cursor: pointer;
+    }
+  }
+
+  &__input {
+    border: none;
+    background: none;
+    width: 100%;
+    font-size: 17px;
+    color: var(--text-color);
+    transition: color 0.2s;
+  }
+}

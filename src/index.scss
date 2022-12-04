@@ -15,12 +15,13 @@ html[data-theme="light"] {
   --toggle-img-url: url(./images/icon-moon.svg);
   --background-body-color: #f8f8f8;
   --background-container-color: #ffffff;
-  --text-header-color: #ffffff;
+  --text-color: #212337;
 }
 
 html[data-theme="dark"] {
   --background-img-url: url(./images/bg-desktop-dark.jpg);
   --toggle-img-url: url(./images/icon-sun.svg);
   --background-body-color: #161722;
-  --text-header-color: #ffffff;
+  --background-container-color: #212337;
+  --text-color: #ffffff;
 }

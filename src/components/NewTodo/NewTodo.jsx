@@ -1,5 +1,6 @@
 import { addTodo } from "../../store/todos/todosActions";
 import { useDispatch } from "react-redux";
+import './NewTodo.scss'
 
 function NewTodo() {
   const dispatch = useDispatch();
@@ -11,9 +12,9 @@ function NewTodo() {
   };
 
   return (
-    <form onSubmit={handleAddTodo}>
-      <input type="text" name="title" placeholder="Введите текст" />
-      <button type="submit">Добавить</button>
+    <form className="form-add" onSubmit={handleAddTodo}>
+      <button className="form-add__btn" type="submit" ></button>
+      <input className="form-add__input" type="text" name="title" placeholder="Введите текст..." />
     </form>
   )
 }
