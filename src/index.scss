@@ -16,6 +16,7 @@ html[data-theme="light"] {
   --background-body-color: #f8f8f8;
   --background-container-color: #ffffff;
   --text-color: #212337;
+  --box-shadow-color: #cac9c980;
 }
 
 html[data-theme="dark"] {
@@ -24,4 +25,5 @@ html[data-theme="dark"] {
   --background-body-color: #161722;
   --background-container-color: #212337;
   --text-color: #ffffff;
+  --box-shadow-color: #141520;
 }
