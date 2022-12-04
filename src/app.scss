@@ -1,3 +1,14 @@
-.app__title {
-  font-size: 50px;
+.app {
+  padding-top: 80px;
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  &__container {
+    max-width: 375px;
+    width: 100%;
+  }
 }

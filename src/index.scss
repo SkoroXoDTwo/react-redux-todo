@@ -11,7 +11,9 @@ body {
 }
 
 html[data-theme="light"] {
-  --background-body-color: #fafafa;
+  --background-body-color: #f8f8f8;
+  --background-container-color: #ffffff;
+  --text-header-color: #ffffff;
 }
 
 html[data-theme="dark"] {

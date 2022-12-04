@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { cofigureStore } from "./store/index";
 import { Root } from "./Root";
+import './vendor/normalize.scss';
 import './index.scss';
 
 const store = cofigureStore();

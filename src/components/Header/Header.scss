@@ -1,0 +1,29 @@
+.header {
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    color: var(--text-header-color);
+    letter-spacing: 12px;
+  }
+
+  &__theme-toggle {
+    border: none;
+    width: 25px;
+    height: 25px;
+    background: url(../../images/icon-moon.svg);
+    background-size: contain;
+    background-position: center;
+    transition: opacity 0.2s;
+
+    &:hover {
+      cursor: pointer;
+      opacity: 0.6;
+    }
+  }
+}
