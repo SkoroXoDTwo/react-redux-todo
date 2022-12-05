@@ -17,7 +17,7 @@ function NewTodo() {
       <input
         className="form-add__input"
         type="text" name="title"
-        placeholder="Введите текст..."
+        placeholder="New todo..."
         required
         minLength={2}
       />

@@ -18,6 +18,7 @@
   max-width: 100%;
   width: 100%;
   box-sizing: border-box;
+  transition: border-bottom 0.2s;
 
   &:hover &__delete-btn {
     opacity: 1;
