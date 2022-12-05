@@ -19,8 +19,8 @@ function App() {
       <div className="app__container">
         <Header />
         <NewTodo />
-        <TodoList />
         <Filters />
+        <TodoList />
       </div>
     </div>
   );
