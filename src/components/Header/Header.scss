@@ -28,6 +28,7 @@
     background: var(--toggle-img-url);
     background-size: contain;
     background-position: center;
+    background-repeat: no-repeat;
     transition: opacity 0.2s, background 0.2s;
 
     &:hover {
