@@ -12,6 +12,7 @@ body {
 
 html[data-theme="light"] {
   --background-img-url: url(./images/bg-desktop-light.jpg);
+  --background-img--mobile-url: url(./images/bg-mobile-light.jpg);
   --toggle-img-url: url(./images/icon-moon.svg);
   --background-body-color: #f8f8f8;
   --background-container-color: #ffffff;
@@ -22,6 +23,7 @@ html[data-theme="light"] {
 
 html[data-theme="dark"] {
   --background-img-url: url(./images/bg-desktop-dark.jpg);
+  --background-img--mobile-url: url(./images/bg-mobile-dark.jpg);
   --toggle-img-url: url(./images/icon-sun.svg);
   --background-body-color: #161722;
   --background-container-color: #212337;

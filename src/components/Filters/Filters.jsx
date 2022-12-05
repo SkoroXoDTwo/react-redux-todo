@@ -11,7 +11,6 @@ function Filters() {
 
   return (
     <div className='filters'>
-      <p className='filters__counter'>{todosActive.length} items left</p>
       <nav className='filters__container'>
         <button
           className={'filters__select-btn ' + (activeFilter === 'all' ? 'filters__select-btn_active' : '')}
@@ -33,7 +32,10 @@ function Filters() {
         </button>
       </nav>
 
-      <button className='filters__clear-btn'>Clear completed</button>
+      <div className='todo-info'>
+        <p className='todo-info__counter'>{todosActive.length} items left</p>
+        <button className='todo-info__clear-btn'>Clear completed</button>
+      </div>
     </div>
   );
 }

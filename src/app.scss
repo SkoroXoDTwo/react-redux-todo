@@ -7,8 +7,21 @@
   justify-content: center;
   position: relative;
 
+  @media screen and (max-width: 500px) {
+    & {
+      padding-top: 20px;
+    }
+  }
+
   &__container {
     max-width: 500px;
     width: 100%;
+    padding: 40px;
+
+    @media screen and (max-width: 500px) {
+      & {
+        padding: 20px;
+      }
+    }
   }
 }

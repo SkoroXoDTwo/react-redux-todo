@@ -14,7 +14,13 @@ function NewTodo() {
   return (
     <form className="form-add" onSubmit={handleAddTodo}>
       <button className="form-add__btn" type="submit" ></button>
-      <input className="form-add__input" type="text" name="title" placeholder="Введите текст..." />
+      <input
+        className="form-add__input"
+        type="text" name="title"
+        placeholder="Введите текст..."
+        required
+        minLength={2}
+      />
     </form>
   )
 }

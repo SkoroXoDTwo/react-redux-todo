@@ -4,10 +4,17 @@
   left: 0;
   width: 100%;
   height: 300px;
-  background: var(--background-img-url);
+  background-image: var(--background-img-url);
   background-size: cover;
   background-position: center;
   z-index: -1;
   max-width: 1440px;
   transition: background 0.2s;
+
+  @media screen and (max-width: 500px) {
+    & {
+      height: 200px;
+      background-image: var(--background-img--mobile-url);
+    }
+  }
 }
