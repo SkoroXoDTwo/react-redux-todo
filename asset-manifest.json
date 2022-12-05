@@ -1,7 +1,11 @@
 {
   "files": {
-    "main.css": "./static/css/main.6573ed06.css",
-    "main.js": "./static/js/main.bcc2c814.js",
+    "main.css": "./static/css/main.d97f123d.css",
+    "main.js": "./static/js/main.ee5a70f3.js",
+    "static/media/Inter-Bold.woff": "./static/media/Inter-Bold.93c1301bd9f486c573b3.woff",
+    "static/media/Inter-Regular.woff": "./static/media/Inter-Regular.8c206db99195777c6769.woff",
+    "static/media/Inter-Bold.woff2": "./static/media/Inter-Bold.ec64ea577b0349e055ad.woff2",
+    "static/media/Inter-Regular.woff2": "./static/media/Inter-Regular.c8ba52b05a9ef10f4758.woff2",
     "static/media/bg-desktop-light.jpg": "./static/media/bg-desktop-light.3508d620efd5a52bb4ce.jpg",
     "static/media/checkbox-checekd.svg": "./static/media/checkbox-checekd.3edae80e16de165b9b1e.svg",
     "static/media/bg-desktop-dark.jpg": "./static/media/bg-desktop-dark.73e47dbb723ebc772ef0.jpg",
@@ -11,11 +15,11 @@
     "index.html": "./index.html",
     "static/media/icon-moon.svg": "./static/media/icon-moon.6c03114b495d05f4380b.svg",
     "static/media/icon-cross.svg": "./static/media/icon-cross.6ee81d30b75cab19d6f7.svg",
-    "main.6573ed06.css.map": "./static/css/main.6573ed06.css.map",
-    "main.bcc2c814.js.map": "./static/js/main.bcc2c814.js.map"
+    "main.d97f123d.css.map": "./static/css/main.d97f123d.css.map",
+    "main.ee5a70f3.js.map": "./static/js/main.ee5a70f3.js.map"
   },
   "entrypoints": [
-    "static/css/main.6573ed06.css",
-    "static/js/main.bcc2c814.js"
+    "static/css/main.d97f123d.css",
+    "static/js/main.ee5a70f3.js"
   ]
 }
