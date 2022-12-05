@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "./static/css/main.6573ed06.css",
+    "main.js": "./static/js/main.bcc2c814.js",
+    "static/media/bg-desktop-light.jpg": "./static/media/bg-desktop-light.3508d620efd5a52bb4ce.jpg",
+    "static/media/checkbox-checekd.svg": "./static/media/checkbox-checekd.3edae80e16de165b9b1e.svg",
+    "static/media/bg-desktop-dark.jpg": "./static/media/bg-desktop-dark.73e47dbb723ebc772ef0.jpg",
+    "static/media/checkbox-disabled.svg": "./static/media/checkbox-disabled.1cda715d8c41d821bdae.svg",
+    "static/media/icon-add.svg": "./static/media/icon-add.c03a61b9c64223ad4ec6.svg",
+    "static/media/icon-sun.svg": "./static/media/icon-sun.910b1f9a23741afc341e.svg",
+    "index.html": "./index.html",
+    "static/media/icon-moon.svg": "./static/media/icon-moon.6c03114b495d05f4380b.svg",
+    "static/media/icon-cross.svg": "./static/media/icon-cross.6ee81d30b75cab19d6f7.svg",
+    "main.6573ed06.css.map": "./static/css/main.6573ed06.css.map",
+    "main.bcc2c814.js.map": "./static/js/main.bcc2c814.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6573ed06.css",
+    "static/js/main.bcc2c814.js"
+  ]
+}
