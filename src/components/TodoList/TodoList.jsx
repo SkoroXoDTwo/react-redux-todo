@@ -12,13 +12,25 @@ function TodoList() {
   return (
     <ul className="todo-list">
       {todos.map((todo) => (
-        <li className="todo-item" key={todo.id}>
-          <input
-            type="checkbox"
-            checked={todo.completed}
-            onChange={() => dispatch(toggleTodo(todo.id))}
-          />
-          <p className="todo-item__text">{todo.title}</p>
+        <li className="todo-item" key={todo.id} draggable={true}>
+
+          <label htmlFor={"checkbox-" + todo.id}>
+            <input
+              className="todo-item__checbox"
+              type="checkbox"
+              id={"checkbox-" + todo.id}
+              checked={todo.completed}
+              onChange={() => dispatch(toggleTodo(todo.id))}
+            />
+            <span className="todo-item__checbox-custom"></span>
+          </label>
+
+          <p
+            className={"todo-item__text " + (todo.completed ? "todo-item__text_completed" : "")}
+            onClick={() => dispatch(toggleTodo(todo.id))}
+          >
+            {todo.title}
+          </p>
           <button className="todo-item__delete-btn" onClick={() => dispatch(removeTodo(todo.id))}></button>
         </li>
       ))}
