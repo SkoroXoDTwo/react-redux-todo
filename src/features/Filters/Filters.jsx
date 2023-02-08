@@ -1,14 +1,13 @@
 import { useSelector, useDispatch } from 'react-redux'
-import { setFilter } from '../../store/filters/filtersActions';
-import { removeCompleted } from '../../store/todos/todosActions'
-import { selectActiveFilter } from '../../store/filters/filtersSelectors'
-import { selectVisibleTodos } from "../../store/todos/todosSelectors";
+import { setFilter } from './filter-slice';
+import { selectActiveFilter } from './filter-slice';
+import { selectVisibleTodo } from '../NewTodo/newTodo-slice';
 import './Filters.scss'
 
 function Filters() {
   const dispatch = useDispatch();
   const activeFilter = useSelector(selectActiveFilter);
-  const todosActive = useSelector((state) => selectVisibleTodos(state, 'active'));
+  const todosActive = useSelector((state) => selectVisibleTodo(state, 'active'));
 
   return (
     <div className='filters'>
@@ -35,7 +34,7 @@ function Filters() {
 
       <div className='todo-info'>
         <p className='todo-info__counter'>{todosActive.length} items left</p>
-        <button className='todo-info__clear-btn' onClick={() => dispatch(removeCompleted())}>Clear completed</button>
+        <button className='todo-info__clear-btn'>Clear completed</button>
       </div>
     </div>
   );

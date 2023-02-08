@@ -1,3 +1,3 @@
-export function setHTMLTheme (theme) {
+export function setHtmlTheme (theme) {
   document.querySelector('#html').setAttribute('data-theme', theme);
 }

@@ -1,4 +1,4 @@
-import { addTodo } from "../../store/todos/todosActions";
+import { addTodo } from "./newTodo-slice";
 import { useDispatch } from "react-redux";
 import './NewTodo.scss'
 

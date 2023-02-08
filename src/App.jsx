@@ -1,17 +1,17 @@
 import BackgroundImage from "./components/BackgroundImage/BackgroundImage";
 import Header from "./components/Header/Header";
-import NewTodo from "./components/NewTodo/NewTodo";
+import NewTodo from "./features/NewTodo/NewTodo";
 import TodoList from "./components/TodoList/TodoList";
-import Filters from "./components/Filters/Filters";
+import Filters from "./features/Filters/Filters";
 import './App.scss'
 import React from "react";
-import { setHTMLTheme } from './utils/setHTMLTheme'
-import { selectTheme } from './store/themes/themesSelectors'
+import { setHtmlTheme } from './utils/setHtmlTheme'
+import { selectTheme } from './features/Theme/theme-slice'
 import { useSelector } from 'react-redux'
 
 function App() {
   const activeTheme = useSelector(selectTheme);
-  setHTMLTheme(activeTheme);
+  setHtmlTheme(activeTheme);
 
   return (
     <div className="app">
