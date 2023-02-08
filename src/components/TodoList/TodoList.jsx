@@ -7,7 +7,6 @@ import './TodoList.scss';
 function TodoList() {
   const activeFilter = useSelector(selectActiveFilter);
   const todos = useSelector(state => selectVisibleTodo(state, activeFilter));
-  console.log(todos);
   const dispatch = useDispatch();
 
   return (

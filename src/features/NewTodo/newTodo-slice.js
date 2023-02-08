@@ -32,7 +32,6 @@ export const todoReducer = todoSlice.reducer;
 export const { addTodo, toggleTodo, removeTodo } = todoSlice.actions;
 export const selectTodos = (state) => state.todo;
 export const selectVisibleTodo = (state, filter) => {
-  console.log(state)
   switch (filter) {
     case "all": {
       return state.todos;
